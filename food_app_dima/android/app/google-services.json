@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "583855561706",
+    "project_id": "dimaapp-506d3",
+    "storage_bucket": "dimaapp-506d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583855561706:android:dd883d296e763a59483093",
+        "android_client_info": {
+          "package_name": "com.example.food_app_dima"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583855561706-v6ja06ro92jinpsd4jl45fqostnnob8d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4J0LQkWotYd4vinWQvqXk_nYXgZ1qgn0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583855561706-v6ja06ro92jinpsd4jl45fqostnnob8d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
