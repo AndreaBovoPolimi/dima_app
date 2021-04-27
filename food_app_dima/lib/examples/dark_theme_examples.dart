@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app_dima/utils/theme/theme_notifier.dart';
+import 'package:food_app_dima/utils/theme_notifier.dart';
 import 'package:provider/provider.dart';
 
 class DarkThemeExamples extends StatefulWidget {
