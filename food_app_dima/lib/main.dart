@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app_dima/examples/test.dart';
 import 'package:food_app_dima/pages/login.dart';
 import 'package:food_app_dima/utils/theme_notifier.dart';
 import 'package:provider/provider.dart';
@@ -40,8 +41,7 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             title: 'Dima App',
             theme: Provider.of<ThemeNotifier>(context).getTheme(),
-            //home: MyHomePage(title: 'PORCO DIO'),
-            home: Authenticate(),
+            home: HomePage(),
           );
         },
       ),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:food_app_dima/auth/authentication_provider.dart';
 import 'package:provider/provider.dart';
 
-
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
 
@@ -20,9 +19,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text("WELCOME TEST REST", style: TextStyle(fontSize: 30)),
             ElevatedButton(
-              onPressed: () {
-                new
-              },
+              onPressed: () {},
               child: Text("Chiama Spoonacular"),
             ),
           ],
