@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Dima App</string>
+  <string name="facebook_app_id">302238394825054</string>
+  <string name="fb_login_protocol_scheme">fb302238394825054</string>
+</resources>

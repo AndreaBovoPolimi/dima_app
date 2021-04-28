@@ -53,6 +53,22 @@ class AuthenticationProvider {
     return "Signed in with Google!";
   }
 
+  Future<String> signInWithFacebook() async {
+    final LoginResult result = await FacebookAuth.instance.login();
+    try {
+      if (result.status == LoginStatus.success) {
+        // Create a credential from the access token
+        final OAuthCredential credential =
+            FacebookAuthProvider.credential(result.accessToken.token);
+        // Once signed in, return the UserCredential
+        await FirebaseAuth.instance.signInWithCredential(credential);
+      }
+    } on FirebaseAuthException catch (e) {
+      return e.message;
+    }
+    return "Signed in with Facebook!";
+  }
+
   //SIGN OUT METHOD
   Future<void> signOut() async {
     await firebaseAuth.signOut();

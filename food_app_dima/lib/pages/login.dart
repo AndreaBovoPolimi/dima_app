@@ -83,6 +83,12 @@ class _LoginPageState extends State<LoginPage> {
               context.read<AuthenticationProvider>().signInWithGoogle();
             },
           ),
+          SignInButton(
+            Buttons.FacebookNew,
+            onPressed: () {
+              context.read<AuthenticationProvider>().signInWithGoogle();
+            },
+          ),
         ],
       ),
     );
