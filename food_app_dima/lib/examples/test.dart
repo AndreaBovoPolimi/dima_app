@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:food_app_dima/auth/authentication_provider.dart';
-import 'package:provider/provider.dart';
+import 'package:food_app_dima/services/spoonacular/ingredients_service.dart';
+import 'package:flutter/foundation.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key}) : super(key: key);
@@ -19,7 +19,11 @@ class _HomePageState extends State<HomePage> {
           children: [
             Text("WELCOME TEST REST", style: TextStyle(fontSize: 30)),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                SpoonacularIngredientsApi()
+                    .getIngredientById("2047")
+                    .then((value) => print(value.toJson()));
+              },
               child: Text("Chiama Spoonacular"),
             ),
           ],
